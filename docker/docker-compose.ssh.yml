@@ -1,7 +1,7 @@
 version: "2.3"
 services:
   ssh:
-    image: poyaz/forticlient-ssh:latest
+    image: 1arry1awrenceforticlient-ssh:latest
     depends_on:
       - vpn
     environment:

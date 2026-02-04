@@ -268,7 +268,7 @@ docker run -it \
   -e VPN_ADDR=host:port \
   -e VPN_USER=me@domain \
   -e VPN_PASS=secret \
-  poyaz/forticlient:latest
+  1arry1awrenceforticlient:latest
 ```
 
 ### Run forti client container (With port forwarder)
@@ -283,7 +283,7 @@ docker run -it \
   -e VPN_ADDR=host:port \
   -e VPN_USER=me@domain \
   -e VPN_PASS=secret \
-  poyaz/forticlient:latest
+  1arry1awrenceforticlient:latest
 
 ### RDP port forwarder
 docker run -it \
@@ -324,7 +324,7 @@ docker run -it \
   -e VPN_PASS=secret \
   -e VPN_2FA_DIR=/app \
   -e VPN_2FA_DIR=/app/my-2fa.txt
-  poyaz/forticlient:latest
+  1arry1awrenceforticlient:latest
 ```
 
 ## Usage
@@ -384,7 +384,7 @@ docker run -it \
   -e VPN_ADDR=host:port \
   -e VPN_USER=me@domain \
   -e VPN_PASS=secret \
-  poyaz/forticlient:latest
+  1arry1awrenceforticlient:latest
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
 ip route add 10.201.0.0/16 via 172.20.0.2
