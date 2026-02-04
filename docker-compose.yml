@@ -1,7 +1,7 @@
 version: "2.3"
 services:
   vpn:
-    image: 1arry1awrenceforticlient:latest
+    image: 1arry1awrence/forticlient:latest
     network_mode: bridge
     devices:
       - /dev/net/tun:/dev/net/tun
