@@ -9,8 +9,8 @@ then
     exit 1
 fi
 
-prefix_image_forti="poyaz/forticlient"
-prefix_image_ssh="poyaz/forticlient-ssh"
+prefix_image_forti="1arry1awrence/forticlient"
+prefix_image_ssh="1arry1awrence/forticlient-ssh"
 platforms="${PLATFORMS:-linux/amd64,linux/arm64}"
 
 if ! docker buildx version >/dev/null 2>&1; then
