@@ -1,7 +1,7 @@
 version: "2.3"
 services:
   dns:
-    image: alphabet5/dnsmasq:latest
+    image: sixeyed/dnsmasq:linux-arm64
     depends_on:
       vpn:
         condition: service_healthy
