@@ -11,10 +11,10 @@ services:
     cap_add:
       - NET_ADMIN
     ports:
-      - "127.0.0.1:${FORTI_PROXY_PORT:-1080}:1080"
-      - "127.0.0.1:${FORTI_DNS_PORT:-1081}:1081/tcp"
-      - "127.0.0.1:${FORTI_DNS_PORT:-1081}:1081/udp"
-      - "127.0.0.1:${FORTI_SSH_PORT:-1082}:1082"
+      - "${FORTI_PROXY_PORT:-1080}:1080"
+      - "${FORTI_DNS_PORT:-1081}:1081/tcp"
+      - "${FORTI_DNS_PORT:-1081}:1081/udp"
+      - "${FORTI_SSH_PORT:-1082}:1082"
     expose:
       - 1080
       - 1081
