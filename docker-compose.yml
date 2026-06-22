@@ -42,9 +42,11 @@ services:
     sysctls:
       - net.ipv6.conf.all.disable_ipv6=0
     healthcheck:
-      test: [ "CMD-SHELL", "test `ip -o a show | cut -d ' ' -f 2 | grep ppp0 | wc -l` -eq 1 || kill 1" ]
+      test: [ "CMD-SHELL", "ip -o a show ppp0 >/dev/null 2>&1 || exit 1" ]
       interval: 11s
       timeout: 2s
+      retries: 3
+      start_period: 30s
     restart: "always"
     network_mode: "service:vpn"
     logging:
