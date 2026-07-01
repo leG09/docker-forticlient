@@ -19,6 +19,12 @@ services:
       - 1080
       - 1081
       - 1082
+    healthcheck:
+      test: [ "CMD-SHELL", "bash /usr/local/bin/docker-healcheck.sh" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
     restart: "always"
     logging:
       driver: ${VPN_LOG_DRIVER:-json-file}
